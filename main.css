@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/*-- Ordered how they appear in HTML --*/
+
+/*-- Elements --*/
+
+:root {
+    --color_one: #e3d26f;
+    --color_two: #Ca895f;
+    --color_three: #a15e49;
+    --color_four: #4e3822;
+    --color_five: #2F1b25;
+
+    --dynamic_size_1: calc(calc(calc(5vh / 10) + calc(5vw / 10)) * 1.25);
+    --dynamic_size_2: calc(calc(calc(5vh / 10) + calc(5vw / 10)) * 2.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*-- Id tags --*/
+
+#main_box {
+    height: 100vh;
+    width: 100vw;
+}
+
+#header_box {
+    width: 100vw;
+    height: 5vh;
+}
+
+
+#parvati_logo {
+    height: var(--dynamic_size_2);
+  
+
+    color: white;
+}
+
+#parvati_bounding {
+    height: 5vh;
+}
+
+#box_one {
+    background-image: url(Assets/Timaru.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+#navigation {
+    width: max-content;
+    height: min-content;
+}
+
+#spacer_box {
+    height: 100%;
+    width: 50%;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*-- Class tags --*/
+
+.flex_container_row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex_item {
+    display: flex;
+}
+
+.force_top {
+    position: fixed;
+    top: 0;
+}
+
+.relative_hw_centre {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#footer {
+    width: 100vw;
+    height: 10vh;
+}
+
+.dynamic_font_size_1 {
+    font-size: var(--dynamic_size_1);
+}
+
+.dynamic_font_size_2 {
+    font-size: var(--dynamic_size_2);
+}
+
+.inline_block {
+    display: inline-block;
+}
+
+.content_box {
+    width: 100vw;
+    height: 100vh;
+}
