@@ -11,8 +11,15 @@
     --color_four: #4e3822;
     --color_five: #2F1b25;
 
-    --dynamic_size_1: calc(calc(calc(5vh / 10) + calc(5vw / 10)) * 1.25);
-    --dynamic_size_2: calc(calc(calc(5vh / 10) + calc(5vw / 10)) * 2.5);
+    --dynamic_size_1: calc(calc(calc(5vh / 10) + calc(5vw / 10)) * 1);
+    --dynamic_size_1_5: calc(calc(calc(5vh / 10) + calc(5vw / 10)) * 1.5);
+    --dynamic_size_2: calc(calc(calc(5vh / 10) + calc(5vw / 10)) * 2);
+    --dynamic_size_2_5: calc(calc(calc(5vh / 10) + calc(5vw / 10)) * 2.5);
+    --dynamic_size_3: calc(calc(calc(5vh / 10) + calc(5vw / 10)) * 3);
+    --dynamic_size_3_5: calc(calc(calc(5vh / 10) + calc(5vw / 10)) * 3.5);
+    --dynamic_size_4: calc(calc(calc(5vh / 10) + calc(5vw / 10)) * 4);
+    --dynamic_size_4_5: calc(calc(calc(5vh / 10) + calc(5vw / 10)) * 4.5);
+    --dynamic_size_5: calc(calc(calc(5vh / 10) + calc(5vw / 10)) * 5);
 }
 
 * {
@@ -29,29 +36,28 @@ a {
 #main_box {
     height: 100vh;
     width: 100vw;
+    overflow: scroll;
 }
 
 #header_box {
     width: 100vw;
-    height: 5vh;
+    height: var(--dynamic_size_3);
+    background-color: red;
 }
 
 
 #parvati_logo {
-    height: var(--dynamic_size_2);
-  
-
+    height: var(--dynamic_size_3);
     color: white;
 }
 
-#parvati_bounding {
-    height: 5vh;
+#parvati_logo_2 {
+    height: 70vh
 }
 
-#box_one {
-    background-image: url(Assets/Timaru.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+
+#parvati_bounding {
+    height: 5vh;
 }
 
 
@@ -68,16 +74,41 @@ a {
     margin-right: auto;
 }
 
+#footer {
+    width: 100vw;
+    height: 10vh;
+    background-color: lightblue;
+}
 
 /*-- Class tags --*/
+
+.fake_centre_page {
+    width: 70vw;
+    height: 100vh;
+    background-color: purple;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bounding {
+    width: max-content;
+    height: max-content;
+}
 
 .flex_container_row {
     display: flex;
     flex-direction: row;
 }
 
+.flex_container_column {
+    display: flex;
+    flex-direction: column;
+}
+
+
 .flex_item {
     display: flex;
+    width: 100%;
 }
 
 .force_top {
@@ -92,13 +123,12 @@ a {
     transform: translate(-50%, -50%);
 }
 
-#footer {
-    width: 100vw;
-    height: 10vh;
-}
-
 .dynamic_font_size_1 {
     font-size: var(--dynamic_size_1);
+}
+
+.dynamic_font_size_1_5 {
+    font-size: var(--dynamic_size_1_5);
 }
 
 .dynamic_font_size_2 {
@@ -112,4 +142,8 @@ a {
 .content_box {
     width: 100vw;
     height: 100vh;
+}
+
+.text_centre {
+    text-align: center;
 }
