@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
-/*-- Ordered how they appear in HTML --*/
-
 /*-- Elements --*/
 
 :root {
@@ -29,6 +27,11 @@
 
 a {
     text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /*-- Id tags --*/
@@ -36,7 +39,7 @@ a {
 #main_box {
     height: 100vh;
     width: 100vw;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 #header_box {
@@ -47,12 +50,14 @@ a {
 
 
 #parvati_logo {
-    height: var(--dynamic_size_3);
+    --padding: calc(var(--dynamic_size_1) / 2);
+    height: calc(var(--dynamic_size_3) - calc(var(--padding) * 2));
+    padding: var(--padding);
     color: white;
 }
 
 #parvati_logo_2 {
-    height: 70vh
+    width: 100%;
 }
 
 
@@ -91,8 +96,8 @@ a {
 }
 
 .bounding {
-    width: max-content;
-    height: max-content;
+    width: 100%;
+    height: 100%;
 }
 
 .flex_container_row {
@@ -103,12 +108,6 @@ a {
 .flex_container_column {
     display: flex;
     flex-direction: column;
-}
-
-
-.flex_item {
-    display: flex;
-    width: 100%;
 }
 
 .force_top {
@@ -146,4 +145,13 @@ a {
 
 .text_centre {
     text-align: center;
+}
+
+.absolute_bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+.font_merriweather {
+    font-family: Merriweather;
 }
