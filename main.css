@@ -9,6 +9,7 @@
     --color_four: #4e3822;
     --color_five: #2F1b25;
 
+    --dynamic_size_0_5: calc(calc(calc(5vh / 10) + calc(5vw / 10)) * 0.5);
     --dynamic_size_1: calc(calc(calc(5vh / 10) + calc(5vw / 10)) * 1);
     --dynamic_size_1_5: calc(calc(calc(5vh / 10) + calc(5vw / 10)) * 1.5);
     --dynamic_size_2: calc(calc(calc(5vh / 10) + calc(5vw / 10)) * 2);
@@ -36,24 +37,18 @@ a:hover {
 
 /*-- Id tags --*/
 
-#main_box {
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-}
-
 #header_box {
     width: 100vw;
     height: var(--dynamic_size_3);
-    background-color: red;
+    background-color: #ffffff80;
+    backdrop-filter: blur(50px);
 }
 
 
 #parvati_logo {
-    --padding: calc(var(--dynamic_size_1) / 2);
+    --padding: calc(var(--dynamic_size_0_5));
     height: calc(var(--dynamic_size_3) - calc(var(--padding) * 2));
     padding: var(--padding);
-    color: white;
 }
 
 #parvati_logo_2 {
@@ -82,7 +77,6 @@ a:hover {
 #footer {
     width: 100vw;
     height: 10vh;
-    background-color: lightblue;
 }
 
 /*-- Class tags --*/
@@ -90,7 +84,6 @@ a:hover {
 .fake_centre_page {
     width: 70vw;
     height: 100vh;
-    background-color: purple;
     margin-left: auto;
     margin-right: auto;
 }
@@ -143,10 +136,6 @@ a:hover {
     height: 100vh;
 }
 
-.text_centre {
-    text-align: center;
-}
-
 .absolute_bottom {
     position: absolute;
     bottom: 0;
@@ -154,4 +143,62 @@ a:hover {
 
 .font_merriweather {
     font-family: Merriweather;
+}
+
+.push_left {
+    float: left;
+}
+
+.push_right {
+    float: right;
+}
+
+.food_image {
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.534) 0px 0px 500px;
+    border-radius: 10px;
+}
+
+.food_image_bounding {
+    height: 50%;
+}
+
+.bg_one {
+    background-color: var(--color_one);
+}
+
+.bg_two {
+    background-color: var(--color_two);
+}
+
+.bg_three {
+    background-color: var(--color_three);
+}
+
+.bg_four {
+    background-color: var(--color_four);
+}
+
+.bg_five {
+    background-color: var(--color_five);
+}
+
+.text_white {
+    color: white;
+}
+
+.text_black {
+    color: black;
+}
+
+.text_left {
+    text-align: left;
+}
+
+.text_right {
+    text-align: right;
+}
+
+.text_centre {
+    text-align: center;
 }
