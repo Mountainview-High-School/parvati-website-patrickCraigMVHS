@@ -202,3 +202,22 @@ a:hover {
 .text_centre {
     text-align: center;
 }
+
+.menu_food_item {
+    width: calc(var(--dynamic_size_5) * 2.5);
+    height: auto;
+}
+
+.min_width {
+    width: fit-content;
+}
+
+.menu_bounding_item {
+    padding: 10px;
+    background-color: var(--color_three);
+
+}
+
+.padding_10 {
+    padding: 10px;
+}
